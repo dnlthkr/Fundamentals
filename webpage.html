@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Let's Script: Java Edition</title>
+<style>
+
+
+
+    hr {
+        border-width: 10px;
+        border-style: groove;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .topnav {
+    background-color: skyblue;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: darkslategray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color:lightseagreen;
+    color: darkslategray;
+}
+
+.topnav a.active {
+    background-color: gray;
+    color: white
+}
+</style> 
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    
+    width: 200px;
+    height: 200px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    top: 240px;
+    right: 20px;
+    background-color: skyblue;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 10px;
+    border-color: black;
+      }
+      
+      
+
+.sidenav a {
+       padding: 6px 8px 6px 16px;
+       text-decoration: none;
+       font-size: 25px;
+       color: #818181;
+       display: block;
+   }
+
+.sidenav a:hover {
+       color: #f1f1f1;
+   }
+
+.main {
+    margin-left: 140px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+h1 {
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 60px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    left: 80px;
+}
+
+
+
+
+   </style>
+   </head>
+   <body>
+
+   
+
+    
+
+
+    <div id="mySidenav" class="sidenav">
+        <h3 align="center">Dev Resources</h3> 
+        <a href="http://www.w3schools.com" target="_blank">W3Schools</a>
+        <a href="www.stackoverflow.com" target="_blank">Stackoverflow</a>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Docs</a>
+    </div>
+
+
+    <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+    }
+    
+    </script>
+
+ 
+
+    <h1 align="center">Let's Script: Java Edition</h1>
+    <h1 style="font-family: 'Courier New', Courier, monospace;"></h1>
+
+ 
+
+
+    <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#functions">Functions</a>
+            <a href="#objects">Objects</a>
+            <a href="#arrays">Arrays</a>
+    </div>
+
+     <hr>
+
+    <nav>
+        
+
+            <section>
+                <h2>Functions</h2>
+                <figure>
+                    <pre>
+                        <code>
+                            function myFunction(p1, p2) {
+                                return p1 * p2; // this function returns the product of p1 and p2
+                            }
+                        </code>
+                    </pre>
+                </figure>
+                <p>A function is a JavaScript procedure-a set of statements that performs a task or calculates a value.</p>
+                <p>In this scenario, we are calling p1 and p2, and then executing the process by invoking it in the curly brackets{}</p>
+
+                <h2>Objects</h2>
+                <figure>
+                    <pre>
+                        <code>
+                            object type="application/pdf"
+                            width="250">
+                        </object>
+                        </code>
+                    </pre>
+                </figure>
+                <p>The <object> tag defines an embedded object within an HTML document.</p>
+                <p>Use this tag to embed multimedia in your web pages.</p>
+                <p>Here we are defining the width for the pdf file by using the <object> tag</p>
+
+                <h2>Arrays</h2>
+                <figure>
+                    <pre>
+                        <code>
+                            var drum companies = ["Pearl", "Yamaha", "Dynasty"];
+
+                        </code>
+                    </pre>
+                </figure>
+                <p>JavaScript arrays are used to store multiple values in a single variable.</p>
+                <p>If you have a list of items (a list of drum companies, for example),</p>
+                <p>storing the drums in an array could look like this.</p>
+            </section>
+
+            <hr></hr>
+
+            <footer>
+                <p>Posted by: Daniel Thacker</p>
+                <p>Contact Info: <a href="dnlthkr@gmail.com">
+                dnlthkr@gmail.com</a>.</p>
+            </footer>
+
+
+
+        </ul>
+    </nav>
+</head>
+</body>
+</html>
